@@ -44,6 +44,10 @@ export default {
     height: 80px;
     display: flex;
     align-items: center;
+    z-index: 999;
+    position: fixed;
+    top:0;
+    width: 100%;
 
     .container{
       display: flex;
