@@ -1,7 +1,14 @@
 <script>
-export default {
-  name: 'Header'
+// prendo array menuPerone / specifico il percorso da dove lo prendo 
+import { menuPersone } from '../data/header'
 
+export default {
+  name: 'Header',
+    data() {
+      return {
+        menuPersone,
+      }
+    },
 }
 </script>
 
@@ -10,9 +17,11 @@ export default {
       <div class="container ">
           
             <ul class="menu">
-              <li><a href="#">Donna</a></li>
-              <li><a href="#">Uomo</a></li>
-              <li><a href="#">Bambini</a></li>
+              <li v-for="(arrmenu, index) in menuPersone"
+              :key="index">
+                <a href="#">{{ arrmenu.text }}</a>
+              </li>
+          
             </ul>
           
           

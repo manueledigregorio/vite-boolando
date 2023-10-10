@@ -170,13 +170,14 @@ export default {
                 padding: 5px 5px;
                 background-color: white;
 
-                .euro-red{
-                    color: red;
-                }
+            }
 
-                .euro-bar{
-                    text-decoration: line-through;
-                }
+            .euro-red{
+                color: red;
+            }
+
+            .euro-bar{
+                text-decoration: line-through;
             }
         }
     
